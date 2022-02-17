@@ -1,16 +1,14 @@
-version : 0.2
+version: 0.2
 
 phases:
-  build:
-	commands:
-	  - echo ------------Starting the build phase------------
-	  - mvn clean package
-  post_build:
-	commands:
-		- echo ------------Build Completed------------
-		- mvn clean package
-
-artifacts:
-  files:
-    - target test-service-1.jar
-  discard-paths: yes
+	build:
+		commands:
+			- echo ----------Starting Build Phase----------
+			- mvn clean package
+	post_build:
+		commands:
+			- echo ----------Build Completed----------
+aritfacts:
+	files:
+		- target/test-service-1.jar
+	discard_paths: yes
