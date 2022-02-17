@@ -36,7 +36,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-		<finalName>test-service</finalName>
+		<finalName>test-service-1</finalName>
 	</build>
 
 </project>
