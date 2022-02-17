@@ -3,11 +3,11 @@ version : 0.2
 phases:
 	build:
 		commands:
-			- echo "------------Starting the build phase------------"
+			- echo ------------Starting the build phase------------
 			- mvn clean package
 	post_build:
 		commands:
-			- echo "------------Build Completed------------"
+			- echo ------------Build Completed------------
 artifacts:
 	files:
 		- target test-service-1.jar
