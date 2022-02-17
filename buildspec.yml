@@ -3,12 +3,12 @@ version: 0.2
 phases:
 	build:
 		commands:
-			- echo ----------Starting Build Phase----------
+			- echo Starting Build Phase
 			- mvn clean package
 	post_build:
 		commands:
-			- echo ----------Build Completed----------
-aritfacts:
+			- echo Build Phase Completed
+artifacts:
 	files:
-		- target/test-service-1.jar
-	discard_paths: yes
+		- target/order-service.jar
+	discard-paths: yes
